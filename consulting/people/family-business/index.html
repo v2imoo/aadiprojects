@@ -130,7 +130,7 @@ footer{background:var(--ink);color:#cdd6e4;padding:50px 0 34px;font-size:13.5px}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aadiprojects.com/"}, {"@type": "ListItem", "position": 2, "name": "Consulting", "item": "https://www.aadiprojects.com/consulting"}, {"@type": "ListItem", "position": 3, "name": "People", "item": "https://www.aadiprojects.com/consulting/people"}, {"@type": "ListItem", "position": 4, "name": "Family Business", "item": "https://www.aadiprojects.com/consulting/people/family-business"}]}</script>
 </head><body><header id="sh" class="sh"><div class="sh-wrap">
 <a class="sh-brand" href="/" aria-label="Aadi Projects home">
-<svg class="sh-mark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="dl" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1E4DD8"/><stop offset=".5" stop-color="#6C4DFF"/><stop offset="1" stop-color="#FF5A36"/></linearGradient></defs><path d="M12 3.2 L21.5 20.4 A1 1 0 0 1 20.6 21.9 L3.4 21.9 A1 1 0 0 1 2.5 20.4 Z" fill="url(#dl)"/></svg>
+<span class="sh-delta" aria-hidden="true">&#916;</span>
 <span class="sh-word">AADI&nbsp;PROJECTS</span></a>
 <button class="sh-burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 <nav class="sh-nav" aria-label="Primary">
@@ -139,32 +139,32 @@ footer{background:var(--ink);color:#cdd6e4;padding:50px 0 34px;font-size:13.5px}
 <a class="sh-cta" href="/contact">Talk&nbsp;to&nbsp;us</a></nav>
 </div></header>
 <style>
-.sh{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #ece9e2;transition:transform .35s ease,box-shadow .3s ease;font-family:'Poppins',system-ui,sans-serif}
-.sh.hide{transform:translateY(-100%)}
-.sh.scrolled{box-shadow:0 10px 30px -20px rgba(13,34,65,.4)}
-.sh-wrap{max-width:1180px;margin:0 auto;padding:13px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.sh-brand{display:flex;align-items:center;gap:9px;text-decoration:none}
-.sh-mark{flex:none;display:block}
-.sh-word{font-weight:800;font-size:15.5px;letter-spacing:.06em;color:#0D2241}
-.sh-nav{display:flex;align-items:center;gap:2px}
-.sh-nav a{font-weight:500;font-size:14px;color:#33415a;text-decoration:none;padding:8px 12px;border-radius:9px;white-space:nowrap;transition:.15s}
-.sh-nav a:hover{color:#0D2241;background:#f4f2ec}
-.sh-nav .sh-cta{background:#FF5A36;color:#fff;font-weight:600;padding:9px 17px;border-radius:999px;margin-left:6px}
-.sh-nav .sh-cta:hover{background:#e94e2e;color:#fff}
-.sh-burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
-.sh-burger span{width:22px;height:2px;background:#0D2241;border-radius:2px;transition:.25s}
-.sh-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.sh-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.sh-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+#sh{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #ece9e2;transition:transform .35s ease,box-shadow .3s ease;font-family:'Poppins',system-ui,sans-serif}
+#sh.hide{transform:translateY(-100%)}
+#sh.scrolled{box-shadow:0 10px 30px -20px rgba(13,34,65,.4)}
+#sh .sh-wrap{max-width:1180px;margin:0 auto;padding:13px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+#sh .sh-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+#sh .sh-delta{font-family:'Poppins',system-ui,sans-serif;font-weight:800;font-size:23px;line-height:1;color:#1E4DD8;transform:translateY(-1px)}
+#sh .sh-word{font-weight:800;font-size:15.5px;letter-spacing:.06em;color:#0D2241}
+#sh .sh-nav{position:static;background:none;border:0;backdrop-filter:none;box-shadow:none;height:auto;width:auto;max-width:none;margin:0;padding:0;transform:none;display:flex;align-items:center;gap:2px}
+#sh .sh-nav a{font-family:'Poppins',system-ui,sans-serif;font-weight:500;font-size:14px;color:#33415a;text-decoration:none;padding:8px 12px;border-radius:9px;white-space:nowrap;transition:.15s;display:inline-block;background:none}
+#sh .sh-nav a:hover{color:#0D2241;background:#f4f2ec}
+#sh .sh-nav .sh-cta{background:#FF5A36;color:#fff;font-weight:600;padding:9px 17px;border-radius:999px;margin-left:6px}
+#sh .sh-nav .sh-cta:hover{background:#e94e2e;color:#fff}
+#sh .sh-burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+#sh .sh-burger span{width:22px;height:2px;background:#0D2241;border-radius:2px;transition:.25s;display:block}
+#sh .sh-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#sh .sh-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+#sh .sh-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:940px){
- .sh-burger{display:flex}
- .sh-nav{position:fixed;top:0;right:0;height:100dvh;width:min(82vw,340px);flex-direction:column;align-items:flex-start;gap:4px;background:#fff;box-shadow:-24px 0 60px -30px rgba(13,34,65,.5);padding:84px 22px 30px;transform:translateX(105%);transition:transform .32s ease;overflow-y:auto}
- .sh-nav.open{transform:none}
- .sh-nav a{width:100%;font-size:16px;padding:13px 12px}
- .sh-nav .sh-cta{margin:8px 0 0;width:100%;text-align:center}
+ #sh .sh-burger{display:flex}
+ #sh .sh-nav{position:fixed;top:0;right:0;height:100dvh;width:min(82vw,340px);flex-direction:column;align-items:flex-start;gap:4px;background:#fff;box-shadow:-24px 0 60px -30px rgba(13,34,65,.5);padding:84px 22px 30px;transform:translateX(105%);transition:transform .32s ease;overflow-y:auto;z-index:1001}
+ #sh .sh-nav.open{transform:none}
+ #sh .sh-nav a{width:100%;font-size:16px;padding:13px 12px}
+ #sh .sh-nav .sh-cta{margin:8px 0 0;width:100%;text-align:center}
 }
 </style>
-<script>(function(){var h=document.getElementById('sh'),last=0,tick=false;
+<script>(function(){var h=document.getElementById('sh');if(!h)return;var last=0,tick=false;
 function on(){var y=window.pageYOffset||document.documentElement.scrollTop;
 if(y>140){h.classList.add('scrolled')}else{h.classList.remove('scrolled')}
 if(y>last&&y>160){h.classList.add('hide')}else{h.classList.remove('hide')}last=y<0?0:y;tick=false;}
