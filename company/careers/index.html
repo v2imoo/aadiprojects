@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Careers — Company · Aadi Projects</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+:root{--ground:#FBFAF7;--white:#fff;--ink:#0D2241;--muted:#41546e;
+--blue:#1E4DD8;--blue-t:#EAF0FF;--green:#0FA46F;--green-t:#E6F6EF;--violet:#6C4DFF;--violet-t:#F0ECFF;
+--sun:#F5A623;--sun-t:#FFF5E1;--coral:#FF5A36;--coral-t:#FFEDE8;--line:rgba(13,34,65,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font-family:'Open Sans',system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.eyebrow,.btn,.nav a,.crumb,.card h3,.svc h3,.fmt h4,.why h4,summary,.where h4,.pair{font-family:'Poppins',sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px}a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Poppins';font-weight:800;font-size:19px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
+.brand .mark{width:22px;height:22px;background:conic-gradient(from 200deg,var(--blue),var(--violet),var(--coral),var(--green),var(--blue));clip-path:polygon(50% 0,100% 100%,0 100%);border-radius:2px}
+.nav .links{display:flex;gap:22px;align-items:center}
+.nav .links a{font-weight:500;font-size:14.5px;color:var(--muted)}.nav .links a:hover,.nav .links a.on{color:var(--ink)}
+.nav .talk{background:var(--coral);color:#fff;padding:9px 17px;border-radius:999px;font-weight:600;font-size:14px}.nav .talk:hover{color:#fff}
+@media(max-width:900px){.nav .links a:not(.talk){display:none}}
+.btn{display:inline-block;font-weight:600;font-size:15px;padding:13px 24px;border-radius:999px;cursor:pointer;border:0;transition:transform .15s ease,box-shadow .15s ease}
+.btn-primary{background:var(--coral);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px -12px var(--coral)}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{transform:translateY(-2px);box-shadow:0 12px 28px -14px rgba(13,34,65,.6)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.6px solid var(--line)}.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-row{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.eyebrow{font-weight:700;font-size:12.5px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;color:var(--coral)}
+.hero{padding:64px 0 52px;overflow:hidden;position:relative}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(46px);opacity:.5;z-index:0}
+.hero .b1{width:240px;height:240px;background:var(--coral-t);top:-30px;right:8%}.hero .b2{width:180px;height:180px;background:var(--violet-t);bottom:-50px;right:24%}
+.hero .inner{position:relative;z-index:1}
+.crumb{font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--coral)}
+.hero h1{font-weight:800;font-size:clamp(36px,5.6vw,64px);line-height:1.03;letter-spacing:-.025em;max-width:18ch}
+.hero .lede{font-size:clamp(16px,1.7vw,20px);max-width:64ch;margin-top:22px;color:var(--muted)}
+.hero .lede2{font-size:16px;max-width:62ch;margin-top:13px;color:var(--muted)}
+.jumpnav{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+.jumpnav a{font-family:'Poppins';font-weight:500;font-size:13.5px;color:var(--muted)}.jumpnav a:hover{color:var(--ink)}
+.sec{padding:64px 0}.sec.tint{background:#F3F1EC}.sec.alt{background:#fff}
+.sec-head{max-width:66ch}
+.sec-head h2{font-weight:700;font-size:clamp(25px,3.4vw,37px);line-height:1.09;letter-spacing:-.02em}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:17px}
+.prose{max-width:72ch;margin-top:8px}.prose p{margin-top:15px;color:#33455f;font-size:16.5px}
+/* service / group cards */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+@media(max-width:820px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-top:5px solid var(--c,var(--blue));border-radius:20px;padding:26px;display:flex;flex-direction:column}
+.svc:hover{box-shadow:0 22px 44px -28px rgba(13,34,65,.5)}
+.svc .tagn{font-family:'Poppins';font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--c,var(--blue))}
+.svc h3{font-size:21px;font-weight:700;margin-top:6px;letter-spacing:-.01em}
+.svc .what{margin-top:11px;color:var(--muted);font-size:15px}
+.svc ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.svc li{font-size:14px;display:flex;gap:10px;align-items:flex-start}
+.svc li b{font-weight:600}.svc li span{color:var(--muted)}
+.svc li::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--c,var(--blue));margin-top:7px;flex:none}
+.svc .more{margin-top:18px;font-family:'Poppins';font-weight:600;font-size:14.5px;color:var(--c,var(--blue))}
+/* formats */
+.fmt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px}
+@media(max-width:720px){.fmt-grid{grid-template-columns:1fr}}
+.fmt{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:flex;gap:15px}
+.fmt .fm{width:40px;height:40px;border-radius:12px;background:var(--coral);color:#fff;font-family:'Poppins';font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;font-size:15px}
+.fmt h4{font-size:16.5px;font-weight:600}.fmt p{font-size:14px;color:var(--muted);margin-top:4px}
+/* where it lands */
+.where-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:30px}
+.where{background:#fff;border:1px solid var(--line);border-top:4px solid var(--c);border-radius:16px;padding:20px}
+.where .h{display:flex;align-items:center;gap:10px;font-family:'Poppins';font-weight:600;font-size:15.5px}
+.where .h .d{width:11px;height:11px;border-radius:3px;background:var(--c);flex:none}
+.where .ang{margin-top:11px;font-size:13px;color:var(--muted);line-height:1.55}
+.where .ang b{display:inline-block;font-family:'Poppins';font-weight:700;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--c);margin-right:7px}
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+.why{padding:20px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+.why .ic{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Poppins';font-weight:700;font-size:14px}
+.why h4{font-size:16px;font-weight:600;margin:13px 0 6px}.why p{font-size:14px;color:var(--muted)}
+/* pairs */
+.pairs{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.pairs .rl{font-family:'Poppins';font-weight:600;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#5a6b82;margin-bottom:13px}
+.pairs .row{display:flex;gap:10px;flex-wrap:wrap}
+.pair{font-family:'Poppins';font-weight:500;font-size:13.5px;padding:8px 14px;border-radius:999px;background:var(--ground);border:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.pair .d{width:8px;height:8px;border-radius:3px}
+/* faq */
+.faq-list{margin-top:30px;border-top:1px solid var(--line)}
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:19px 0;font-size:17px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Poppins';font-weight:600;color:var(--coral);font-size:22px;flex:none;transition:transform .2s ease}
+.faq[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 19px;color:var(--muted);font-size:15px;max-width:84ch}
+/* cta band */
+.talk-band{background:var(--coral);color:#fff;text-align:center;padding:60px 0}
+.talk-band h2{font-weight:800;font-size:clamp(26px,3.6vw,40px);letter-spacing:-.02em}
+.talk-band p{margin-top:12px;font-size:17px;opacity:.95;max-width:48ch;margin-left:auto;margin-right:auto}
+.talk-band .btn-white{background:#fff;color:var(--coral);margin-top:26px}.talk-band .btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(0,0,0,.3)}
+/* footer */
+footer{background:var(--ink);color:#cdd6e4;padding:50px 0 34px;font-size:13.5px}
+.ft-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:24px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12)}
+@media(max-width:820px){.ft-cols{grid-template-columns:1fr 1fr}}
+.ft-cols h5{font-family:'Poppins';font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8ea3be;margin-bottom:12px;font-weight:600}
+.ft-cols a{display:block;color:#cdd6e4;padding:4px 0}.ft-cols a:hover{color:#fff}
+.ft-cols .brand{color:#fff;margin-bottom:10px}.ft-cols .blurb{color:#9fb0c7;font-size:13px;line-height:1.7;max-width:30ch}
+.compliance{margin-top:20px;line-height:1.9;color:#9fb0c7}.compliance b{color:#cdd6e4;font-weight:600}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px;border-radius:4px}
+
+.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px}
+@media(max-width:720px){.cap-grid{grid-template-columns:1fr}}
+.cap{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;border-left:4px solid var(--coral)}
+.cap h4{font-family:'Poppins';font-size:16.5px;font-weight:600;margin-bottom:6px}
+.cap p{font-size:14px;color:var(--muted)}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+@media(max-width:760px){.pkg-grid{grid-template-columns:1fr}}
+.pkg{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;border-top:4px solid var(--coral)}
+.pkg .tagp{font-family:'Poppins';font-weight:700;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--coral);background:var(--coral-t);padding:3px 9px;border-radius:7px;display:inline-block;margin-bottom:10px}
+.pkg h4{font-family:'Poppins';font-size:17px;font-weight:600}.pkg p{font-size:14px;color:var(--muted);margin-top:6px}
+.founder-cta{background:var(--sun-t);border:1px solid var(--sun);border-radius:18px;padding:24px 26px;margin-top:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.founder-cta .ft{max-width:62ch}.founder-cta h4{font-family:'Poppins';font-size:18px;font-weight:700}.founder-cta p{font-size:14.5px;color:#7a5a12;margin-top:5px}
+.founder-cta a{flex:none}
+
+.stmt{padding:60px 0}
+.stmt .rule{width:56px;height:4px;background:var(--coral);border-radius:2px;margin-bottom:24px}
+.stmt p.big{margin:0;font-family:'Poppins';font-weight:600;font-size:clamp(22px,3vw,33px);line-height:1.28;letter-spacing:-.02em;color:var(--ink);max-width:30ch}
+.stmt p.sub{margin-top:20px;color:var(--muted);font-size:16.5px;max-width:64ch;line-height:1.62}
+.diff{display:flex;gap:26px;align-items:flex-start;padding:30px 0;border-top:1px solid var(--line)}
+.diff .dnum{font-family:'Poppins';font-weight:800;font-size:34px;color:var(--c,var(--coral));line-height:.9;flex:none;width:62px}
+.diff h3{font-family:'Poppins';font-weight:700;font-size:23px;letter-spacing:-.015em}
+.diff p{margin-top:10px;color:var(--muted);font-size:15.5px;max-width:78ch;line-height:1.64}
+.role{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;border-left:4px solid var(--c,var(--coral))}
+.role h4{font-family:'Poppins';font-weight:600;font-size:16.5px;margin-bottom:6px}.role p{font-size:14px;color:var(--muted);line-height:1.55}
+.post{background:#fff;border:1px solid var(--line);border-top:4px solid var(--c,var(--coral));border-radius:16px;padding:24px;display:flex;flex-direction:column}
+.post .tagn{align-self:flex-start}.post h3{font-family:'Poppins';font-weight:700;font-size:18.5px;margin:9px 0 9px;line-height:1.25}
+.post p{font-size:14px;color:var(--muted);flex:1;line-height:1.55}.post .more{margin-top:16px;font-family:'Poppins';font-weight:600;font-size:13.5px;color:var(--c,var(--coral))}
+.soon{display:inline-block;margin-left:8px;font-family:'Poppins';font-weight:700;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#8a93a3;background:#eef0f3;padding:3px 8px;border-radius:6px;vertical-align:middle}
+</style><meta name="description" content="Aadi is a small firm doing unusually broad work — advising, building, financing, and co-founding companies across India and the United States. For the…">
+<link rel="canonical" href="https://www.aadiprojects.com/company/careers">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="Aadi Projects">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Aadi Projects">
+<meta property="og:title" content="Careers — Company · Aadi Projects"><meta property="og:description" content="Aadi is a small firm doing unusually broad work — advising, building, financing, and co-founding companies across India and the United States. For the…">
+<meta property="og:url" content="https://www.aadiprojects.com/company/careers"><meta property="og:image" content="https://www.aadiprojects.com/assets/og.png"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Careers — Company · Aadi Projects">
+<meta name="twitter:description" content="Aadi is a small firm doing unusually broad work — advising, building, financing, and co-founding companies across India and the United States. For the…"><meta name="twitter:image" content="https://www.aadiprojects.com/assets/og.png">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Aadi Projects", "url": "https://www.aadiprojects.com/", "logo": "https://www.aadiprojects.com/assets/favicon.svg", "image": "https://www.aadiprojects.com/assets/og.png", "description": "Aadi Projects is a consulting and capital firm that builds, funds, and launches companies across the India\u2013US corridor, operating Consulting, Capital, and Cofoundry.", "sameAs": ["https://www.linkedin.com/company/aadiprojects/", "https://www.youtube.com/@aadiprojects", "https://x.com/aadiprojects", "https://www.instagram.com/aadiprojects", "https://www.facebook.com/aadiprojects"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Careers \u2014 Company \u00b7 Aadi Projects", "url": "https://www.aadiprojects.com/company/careers", "description": "Aadi is a small firm doing unusually broad work \u2014 advising, building, financing, and co-founding companies across India and the United States. For the\u2026", "isPartOf": {"@type": "WebSite", "name": "Aadi Projects", "url": "https://www.aadiprojects.com/"}, "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.aadiprojects.com/"}, {"@type": "ListItem", "position": 2, "name": "Company", "item": "https://www.aadiprojects.com/company"}, {"@type": "ListItem", "position": 3, "name": "Careers", "item": "https://www.aadiprojects.com/company/careers"}]}</script>
+</head><body><header id="sh" class="sh"><div class="sh-wrap">
+<a class="sh-brand" href="/" aria-label="Aadi Projects home">
+<svg class="sh-mark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="dl" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1E4DD8"/><stop offset=".5" stop-color="#6C4DFF"/><stop offset="1" stop-color="#FF5A36"/></linearGradient></defs><path d="M12 3.2 L21.5 20.4 A1 1 0 0 1 20.6 21.9 L3.4 21.9 A1 1 0 0 1 2.5 20.4 Z" fill="url(#dl)"/></svg>
+<span class="sh-word">AADI&nbsp;PROJECTS</span></a>
+<button class="sh-burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="sh-nav" aria-label="Primary">
+<a href="/consulting">Consulting</a><a href="/capital">Capital</a><a href="/cofoundry">Cofoundry</a>
+<a href="/for-founders">For&nbsp;Founders</a><a href="/client-experience">Client&nbsp;Experience</a><a href="/company">Company</a>
+<a class="sh-cta" href="/contact">Talk&nbsp;to&nbsp;us</a></nav>
+</div></header>
+<style>
+.sh{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #ece9e2;transition:transform .35s ease,box-shadow .3s ease;font-family:'Poppins',system-ui,sans-serif}
+.sh.hide{transform:translateY(-100%)}
+.sh.scrolled{box-shadow:0 10px 30px -20px rgba(13,34,65,.4)}
+.sh-wrap{max-width:1180px;margin:0 auto;padding:13px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.sh-brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+.sh-mark{flex:none;display:block}
+.sh-word{font-weight:800;font-size:15.5px;letter-spacing:.06em;color:#0D2241}
+.sh-nav{display:flex;align-items:center;gap:2px}
+.sh-nav a{font-weight:500;font-size:14px;color:#33415a;text-decoration:none;padding:8px 12px;border-radius:9px;white-space:nowrap;transition:.15s}
+.sh-nav a:hover{color:#0D2241;background:#f4f2ec}
+.sh-nav .sh-cta{background:#FF5A36;color:#fff;font-weight:600;padding:9px 17px;border-radius:999px;margin-left:6px}
+.sh-nav .sh-cta:hover{background:#e94e2e;color:#fff}
+.sh-burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.sh-burger span{width:22px;height:2px;background:#0D2241;border-radius:2px;transition:.25s}
+.sh-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.sh-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.sh-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:940px){
+ .sh-burger{display:flex}
+ .sh-nav{position:fixed;top:0;right:0;height:100dvh;width:min(82vw,340px);flex-direction:column;align-items:flex-start;gap:4px;background:#fff;box-shadow:-24px 0 60px -30px rgba(13,34,65,.5);padding:84px 22px 30px;transform:translateX(105%);transition:transform .32s ease;overflow-y:auto}
+ .sh-nav.open{transform:none}
+ .sh-nav a{width:100%;font-size:16px;padding:13px 12px}
+ .sh-nav .sh-cta{margin:8px 0 0;width:100%;text-align:center}
+}
+</style>
+<script>(function(){var h=document.getElementById('sh'),last=0,tick=false;
+function on(){var y=window.pageYOffset||document.documentElement.scrollTop;
+if(y>140){h.classList.add('scrolled')}else{h.classList.remove('scrolled')}
+if(y>last&&y>160){h.classList.add('hide')}else{h.classList.remove('hide')}last=y<0?0:y;tick=false;}
+window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(on);tick=true;}},{passive:true});
+var b=h.querySelector('.sh-burger'),n=h.querySelector('.sh-nav');
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow='';});});
+})();</script>
+<main id="main"><section class="hero"><div class="wrap inner"><span class="blob b1"></span><span class="blob b2"></span><div class="crumb rv"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/company">Company</a> &nbsp;/&nbsp; Careers</div><div class="eyebrow rv">Careers</div><h1 class="rv">The most interesting work of your career.</h1><p class="lede rv">Aadi is a small firm doing unusually broad work — advising, building, financing, and co-founding companies across India and the United States. For the right operator, it is a rare place to apply judgment across all of it.</p><p class="lede2 rv">No pyramid to climb. Senior people, real ownership, and a corridor most firms cannot credibly operate on.</p><div class="btn-row rv"><a class="btn btn-ink" href="#thrive">See if it fits</a><a class="btn btn-ghost" href="/contact">Talk to us</a></div><nav class="jumpnav rv" aria-label="On this page"><a href="#what">Why here</a><a href="#thrive">Who thrives</a><a href="#how">How we work</a><a href="#roles">Open roles</a><a href="#faq">FAQ</a></nav></div></section><section class="stmt "><div class="wrap"><div class="rule rv"></div><p class="big rv">We hire for judgment, candor, and range — and then we trust people to use all three from the start.</p><p class="sub rv">If you are tired of advising from a distance, or of building inside a single lane, this is a different proposition.</p></div></section><section class="sec alt" id="what"><div class="wrap"><div class="sec-head rv"><div class="eyebrow">Why here</div><h2>A rare place to do broad, senior work.</h2></div><div class="prose rv"><p>Most firms ask you to choose a discipline and remain inside it. Aadi is built the other way. Because we advise, build, and invest under one roof, the people here move across the work — a strategist who helps shape a deal, an operator who joins a venture, an investor who sits inside a build. The breadth is the point, not an accident.</p><p>We are deliberately boutique, which means there is no pyramid to climb and nowhere to hide. Everyone sits close to real work and is trusted with real judgment early. If you are an operator weary of advising from a safe remove, or an advisor who wants to actually build, this is a place that will use all of you.</p><p>And we do it on a corridor most firms cannot credibly touch — which keeps the work varied, the stakes real, and the craft sharp.</p></div></div></section><section class="sec alt" id="thrive"><div class="wrap"><div class="sec-head rv"><div class="eyebrow">Who thrives here</div><h2>The people who do well at Aadi.</h2></div><div class="cap-grid"><div class="cap rv"><h4>You've made things real</h4><p>You've shipped a product, closed a deal, run a function, or started a company — and you want your hands in the work, not a safe distance from it.</p></div><div class="cap rv"><h4>You hold candor as a discipline</h4><p>You'd rather tell a client the true thing than the comfortable one, and you want colleagues who do the same.</p></div><div class="cap rv"><h4>You think in corridors</h4><p>India and the United States are one canvas to you, not two — and cross-border complexity energises rather than deters you.</p></div><div class="cap rv"><h4>You want range, not a lane</h4><p>You'd rather move between advising, building, and investing than be confined to a single discipline for a decade.</p></div><div class="cap rv"><h4>Your judgment outruns your years</h4><p>However senior your title, you bring real judgment — and you want to be trusted to use it, not managed by a pyramid.</p></div><div class="cap rv"><h4>You build to endure</h4><p>You care that what you make keeps working after you step back — not merely that it shipped on time.</p></div></div></div></section><section class="sec " id="how"><div class="wrap"><div class="sec-head rv"><div class="eyebrow">How we work</div><h2>How we work.</h2></div><div class="prose rv"><p>Senior people on the actual work; candor as a default; a bias toward building the thing rather than describing it. We stay close to clients and to each other — small teams, real ownership, continuity over churn. We use AI to work faster and sharper, never as theatre, and we judge by output and judgment rather than face-time.</p><p>Because the work spans the corridor, there is genuine variety — markets, sectors, and problems that keep the craft sharp and the days unrepetitive. It is demanding, and it is meant to be; the reward is range, ownership, and proximity to consequence that larger firms cannot offer.</p></div></div></section><section class="sec" id="roles"><div class="wrap"><div class="sec-head rv"><div class="eyebrow">Open roles</div><h2>Where we're looking.<span class="soon">Updated periodically</span></h2><p>We hire opportunistically for exceptional people across the firm. If you recognise yourself below — or even if the fit isn't exact — start a conversation.</p></div><div class="cap-grid"><div class="cap rv"><h4>Consulting — operators &amp; builders</h4><p>Across build, people, growth, and strategy. Senior individuals who deliver the work, not merely advise on it.</p></div><div class="cap rv"><h4>Capital — advisory &amp; investing</h4><p>Dealmakers and investors with corridor experience across raises, sales, and principal positions.</p></div><div class="cap rv"><h4>Cofoundry — venture builders</h4><p>People who have started companies and want to build more, inside the studio and the ventures we own.</p></div><div class="cap rv"><h4>Engagement Partners</h4><p>Senior partners to own client relationships end to end and remain their constant across the work.</p></div></div></div></section><section class="sec" id="faq"><div class="wrap"><div class="sec-head rv"><div class="eyebrow">Questions, answered</div><h2>The things people ask first.</h2></div><div class="faq-list rv"><details class="faq"><summary>How do I apply?</summary><p>Reach out via the Contact page with a note about who you are and the work you've actually done. We read every one, and we reply ourselves.</p></details><details class="faq"><summary>Do you only hire senior people?</summary><p>We hire for judgment more than years — but everyone here is trusted with real work early, so we look for people ready to carry it.</p></details><details class="faq"><summary>Where are roles based?</summary><p>On the India–US corridor, with the flexibility the work demands. Tell us where you are and what you're looking for.</p></details><details class="faq"><summary>Nothing fits exactly — should I still write?</summary><p>Yes. We hire opportunistically for exceptional people. If you see yourself here, start the conversation regardless of the list.</p></details></div></div></section><section class="talk-band" id="contact"><div class="wrap"><h2 class="rv">See yourself here?</h2><p class="rv">Send us a note about who you are and what you've built. We read every one — and we reply ourselves.</p><a class="btn btn-white rv" href="/contact">Talk to us →</a></div></section></main>
+<style>
+  .aadi-foot{--blue:#1E4DD8;--green:#0FA46F;--violet:#6C4DFF;--sun:#F5A623;--coral:#FF5A36;--ink:#0D2241;--line:#ece9e2;
+    font-family:'Open Sans',system-ui,sans-serif;background:#FBFAF7;border-top:1px solid var(--line);color:#42526b}
+  .aadi-foot .wrap{max-width:1200px;margin:0 auto;padding:40px 26px 30px}
+  .aadi-foot .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-start}
+  .aadi-foot .brand{display:flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+  .aadi-foot .brand .tri{width:16px;height:16px;border-radius:3px;background:conic-gradient(from 210deg,var(--blue),var(--green),var(--violet),var(--sun),var(--coral),var(--blue))}
+  .aadi-foot .blurb{margin-top:10px;font-size:13.5px;max-width:42ch;line-height:1.6;color:#5a6b82}
+  .aadi-foot .util{display:flex;flex-wrap:wrap;gap:18px;align-items:center;font-family:'Poppins',sans-serif;font-size:13.5px}
+  .aadi-foot .util a{color:#33415a;text-decoration:none;font-weight:500}
+  .aadi-foot .util a:hover{color:var(--ink)}
+  .aadi-foot .util .dot{color:#c7cdd6}
+  .aadi-foot .social{margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px}
+  .aadi-foot .social a{color:#8a93a3;text-decoration:none;font-weight:400}
+  .aadi-foot .social a:hover{color:#5a6b82}
+  .aadi-foot .rule{height:1px;background:linear-gradient(90deg,var(--blue),var(--green),var(--violet),var(--sun),var(--coral));opacity:.5;margin:26px 0 18px;border-radius:1px}
+  .aadi-foot .compliance{font-size:12px;line-height:1.85;color:#6a7689}
+  .aadi-foot .compliance a{color:#42526b;text-decoration:underline}
+</style>
+<footer class="aadi-foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="/"><span class="tri"></span>Aadi Projects</a>
+        <p class="blurb">A consulting and capital firm that builds, funds, and launches companies across the India&ndash;US corridor.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/aadiprojects/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.youtube.com/@aadiprojects" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://x.com/aadiprojects" target="_blank" rel="noopener">X</a>
+          <a href="https://www.instagram.com/aadiprojects" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/aadiprojects" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="util">
+        <a href="/consulting">Consulting</a>
+        <a href="/capital">Capital</a>
+        <a href="/cofoundry">Cofoundry</a>
+        <a href="/for-founders">For Founders</a>
+        <a href="/client-experience">Client Experience</a>
+        <a href="/company">Company</a>
+        <span class="dot">&middot;</span>
+        <a href="/contact">Contact</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <div class="compliance">
+      Offices: India &mdash; [as filed] &nbsp;&middot;&nbsp; United States &mdash; [as filed].<br>
+      Reach us via the <a href="/contact">Contact</a> page. &nbsp;&middot;&nbsp; Consulting &middot; Capital &middot; Cofoundry operate as trade names of Aadi Projects.<br>
+      &copy;&nbsp;Aadi Projects.
+    </div>
+  </div>
+</footer>
+<script>const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});document.querySelectorAll('.rv').forEach(el=>io.observe(el));</script>
+<!--JUMPFIX--><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute("href").slice(1);if(!id)return;var el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:"smooth",block:"start"});history.replaceState&&history.replaceState(null,"","#"+id);}},false);</script>
+</body></html>
